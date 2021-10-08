@@ -1,0 +1,10 @@
+name: 'Simple Workflow'
+'on':
+  push: {}
+jobs:
+  echo:
+    name: 'Echo'
+    runs-on: 'macos-10.15'
+    steps:
+      - name: 'Echoing!'
+        run: 'echo "Hello World!"'

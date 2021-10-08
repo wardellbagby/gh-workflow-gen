@@ -1,0 +1,19 @@
+{
+  "include": ["src/**/*.ts"],
+  "compilerOptions": {
+    "target": "es2020",
+    "module": "es2020",
+    "noEmitHelpers": false,
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "noImplicitAny": true,
+    "allowJs": false,
+    "declaration": true,
+    "skipLibCheck": true,
+    "sourceMap": true,
+    "downlevelIteration": true,
+    "lib": ["es2015"],
+    "outDir": "dist",
+    "rootDir": "src"
+  }
+}

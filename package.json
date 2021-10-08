@@ -1,16 +1,36 @@
 {
-  "name": "github-workflow-generator",
+  "name": "@wardellbagby/github-workflow-generator",
   "version": "0.0.1",
   "description": "Generate GitHub Workflows based on JavaScript or TypeScript templates.",
-  "main": "index.js",
+  "author": "Wardell Bagby",
   "homepage": "https://github.com/wardellbagby/github-workflow-generator",
   "repository": {
     "type": "git",
     "url": "https://github.com/wardellbagby/github-workflow-generator"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc",
+    "pretest": "npm run build && npm link && npm link @wardellbagby/github-workflow-generator",
+    "test": "node --no-warnings --loader ts-node/esm test/test_runner.ts"
   },
-  "author": "",
-  "license": "GPL-3.0-or-later"
+  "exports": {
+    "import": "./dist/index.js"
+  },
+  "types": "./dist/index.d.ts",
+  "type": "module",
+  "engines": {
+    "node": ">=14.18.0"
+  },
+  "license": "GPL-3.0-or-later",
+  "dependencies": {
+    "js-yaml": "^4.1.0"
+  },
+  "devDependencies": {
+    "@types/js-yaml": "^4.0.3",
+    "@types/mocha": "^9.0.0",
+    "@types/node": "^12.20.28",
+    "prettier": "^2.4.1",
+    "ts-node": "^10.2.1",
+    "typescript": "^4.5.0-beta"
+  }
 }

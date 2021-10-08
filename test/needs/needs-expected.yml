@@ -1,0 +1,27 @@
+name: 'Needs Workflow'
+'on':
+  push: {}
+jobs:
+  myFirstJob:
+    name: 'My First Job'
+    runs-on: 'ubuntu-20.04'
+    steps:
+      - name: 'My first step'
+        run: 'echo "My First Step!"'
+  mySecondJob:
+    name: 'My Second Job'
+    runs-on: 'ubuntu-20.04'
+    needs:
+      - 'myFirstJob'
+    steps:
+      - name: 'My second step'
+        run: 'echo "My Second Step!!"'
+  myThirdJob:
+    name: 'My Third Job'
+    runs-on: 'ubuntu-20.04'
+    needs:
+      - 'myFirstJob'
+      - 'mySecondJob'
+    steps:
+      - name: 'My third step'
+        run: 'echo "My Third Step!!!"'
