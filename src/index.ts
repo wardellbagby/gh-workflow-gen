@@ -99,6 +99,7 @@ export const writeWorkflow = <T extends Record<string, string>>(
       `${workflow.name.replace(/\s/g, "-")}.yml`
     );
 
+  fs.mkdirSync(path.resolve(outputFile, ".."), { recursive: true });
   fs.writeFileSync(outputFile, convertToYaml(workflow));
 };
 

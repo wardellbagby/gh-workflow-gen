@@ -1,0 +1,5 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+node --no-warnings --loader ts-node/esm scripts/generate_workflows.ts
+git add .github/workflows

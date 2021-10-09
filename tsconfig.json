@@ -1,5 +1,5 @@
 {
-  "include": ["src/**/*.ts"],
+  "include": ["**/*.ts"],
   "compilerOptions": {
     "target": "es2020",
     "module": "es2020",
@@ -13,7 +13,6 @@
     "sourceMap": true,
     "downlevelIteration": true,
     "lib": ["es2015"],
-    "outDir": "dist",
-    "rootDir": "src"
+    "rootDir": "."
   }
 }
