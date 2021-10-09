@@ -1,4 +1,6 @@
-import { test } from "../.github/workflow-templates/test.js";
+import { continuousIntegration } from "../.github/workflow-templates/continuousIntegration.js";
 import { writeWorkflow } from "../src/index.js";
+import { productionRelease } from "../.github/workflow-templates/productionRelease.js";
 
-writeWorkflow(test);
+writeWorkflow(continuousIntegration);
+writeWorkflow(productionRelease);
