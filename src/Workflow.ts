@@ -3,11 +3,30 @@ export interface BranchesOrTags {
   tags?: string[];
 }
 
+type ubuntuVersions = "20.04" | "18.04" | "latest";
+type macOSVersions = "11" | "10.15" | "latest";
+type windowsVersions = "2016" | "2019" | "2022" | "latest";
+
+type SelfHostedRunnerLabels =
+  | "windows"
+  | "linux"
+  | "macOS"
+  | "x64"
+  | "ARM"
+  | "ARM64"
+  | string;
+
+export type Runners =
+  | `ubuntu-${ubuntuVersions}`
+  | `macos-${macOSVersions}`
+  | `windows-${windowsVersions}`
+  | ["self-hosted", ...SelfHostedRunnerLabels[]];
+
 export interface Job<
   VersionT extends Record<string, string> = Record<string, string>
 > {
   name: string;
-  "runs-on": "ubuntu-20.04" | "macos-10.15";
+  "runs-on": Runners;
   needs?: Array<string | Job<VersionT>> | string | Job<VersionT>;
   if?: string;
   steps: Step<VersionT>[];
