@@ -19,7 +19,8 @@
     "build": "cd src/ && tsc",
     "pretest": "npm run build && npm link && npm link @wardellbagby/gh-workflow-gen",
     "test": "node --no-warnings --loader ts-node/esm test/test_runner.ts",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "prepublishOnly": "npm run build"
   },
   "exports": {
     "import": "./dist/index.js"
