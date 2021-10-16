@@ -1,6 +1,11 @@
-export interface BranchesOrTags {
+export interface BranchesTagsOrPaths {
   branches?: string[];
   tags?: string[];
+  paths?: string[];
+}
+
+export interface Schedule {
+  cron: string;
 }
 
 type ubuntuVersions = "20.04" | "18.04" | "latest";
@@ -49,8 +54,10 @@ export interface Workflow<
 > {
   name: string;
   on: {
-    push?: BranchesOrTags;
-    pull_request?: BranchesOrTags;
+    push?: BranchesTagsOrPaths;
+    pull_request?: BranchesTagsOrPaths;
+    schedule?: Schedule[];
+    workflow_dispatch?: Record<string, never>;
   };
   jobs: Record<string, Job<VersionT>>;
 }
