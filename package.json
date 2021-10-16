@@ -1,6 +1,6 @@
 {
   "name": "@wardellbagby/gh-workflow-gen",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Generate GitHub Workflows based on JavaScript or TypeScript templates.",
   "author": "Wardell Bagby",
   "homepage": "https://github.com/wardellbagby/gh-workflow-gen",
