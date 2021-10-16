@@ -8,6 +8,11 @@
     "type": "git",
     "url": "https://github.com/wardellbagby/gh-workflow-gen"
   },
+  "files": [
+    "src",
+    "dist",
+    "examples"
+  ],
   "keywords": [
     "github workflows",
     "github",
