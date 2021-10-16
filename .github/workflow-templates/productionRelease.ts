@@ -23,6 +23,15 @@ export const productionRelease: AppWorkflow = {
           uses: NPM_PUBLISH,
           with: {
             token: "${{ secrets.NPM_TOKEN }}",
+            registry: "https://registry.npmjs.org/",
+          },
+        },
+        {
+          name: "Publish to GitHub",
+          uses: NPM_PUBLISH,
+          with: {
+            token: "${{ secrets.GITHUB_TOKEN }}",
+            registry: "https://npm.pkg.github.com",
           },
         },
       ],
