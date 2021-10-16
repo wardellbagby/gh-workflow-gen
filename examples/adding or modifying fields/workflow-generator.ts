@@ -1,4 +1,4 @@
-import { Workflow } from "@wardellbagby/github-workflow-generator";
+import { Workflow } from "@wardellbagby/gh-workflow-gen";
 
 export type WorkflowWithSpecialEvent = Workflow & {
   on: {

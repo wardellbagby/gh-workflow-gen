@@ -2,9 +2,9 @@
 
 Declare your GitHub Workflows in TypeScript or JavaScript instead of YAML!
 
-![npm (scoped)](https://img.shields.io/npm/v/@wardellbagby/github-workflow-generator?style=for-the-badge)
-[![GitHub](https://img.shields.io/github/license/wardellbagby/github-workflow-generator?style=for-the-badge)](https://github.com/wardellbagby/github-workflow-generator/blob/main/LICENSE.md)
-[![GitHub Workflow Status](https://img.shields.io/github/workflow/status/wardellbagby/github-workflow-generator/Run%20all%20tests?style=for-the-badge)](https://github.com/wardellbagby/github-workflow-generator/actions?query=workflow%3A%22Run+all+tests%22)
+![npm (scoped)](https://img.shields.io/npm/v/@wardellbagby/gh-workflow-gen?style=for-the-badge)
+[![GitHub](https://img.shields.io/github/license/wardellbagby/gh-workflow-gen?style=for-the-badge)](https://github.com/wardellbagby/gh-workflow-gen/blob/main/LICENSE.md)
+[![GitHub Workflow Status](https://img.shields.io/github/workflow/status/wardellbagby/gh-workflow-gen/Run%20all%20tests?style=for-the-badge)](https://github.com/wardellbagby/gh-workflow-gen/actions?query=workflow%3A%22Run+all+tests%22)
 
 ## What is it?
 
@@ -128,7 +128,7 @@ Good question! Since this library doesn't currently exhaustively cover everythin
 First, let's install it:
 
 ```shell
-npm install --save-dev @wardellbagby/github-workflow-generator
+npm install --save-dev @wardellbagby/gh-workflow-gen
 ```
 
 Next, let's create our first Workflow:
@@ -143,7 +143,7 @@ Now, we need to create a simple script to import these Workflows and write them 
 
 ```typescript
 import { myWorkflow } from "myWorkflowFile";
-import { writeWorkflow } from "@wardellbagby/github-workflow-generator";
+import { writeWorkflow } from "@wardellbagby/gh-workflow-gen";
 
 writeWorkflow(myWorkflow);
 ```

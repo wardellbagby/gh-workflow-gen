@@ -1,17 +1,17 @@
 {
-  "name": "@wardellbagby/github-workflow-generator",
+  "name": "@wardellbagby/gh-workflow-gen",
   "version": "0.0.2",
   "description": "Generate GitHub Workflows based on JavaScript or TypeScript templates.",
   "author": "Wardell Bagby",
-  "homepage": "https://github.com/wardellbagby/github-workflow-generator",
+  "homepage": "https://github.com/wardellbagby/gh-workflow-gen",
   "repository": {
     "type": "git",
-    "url": "https://github.com/wardellbagby/github-workflow-generator"
+    "url": "https://github.com/wardellbagby/gh-workflow-gen"
   },
   "scripts": {
     "prebuild": "rimraf dist/",
     "build": "cd src/ && tsc",
-    "pretest": "npm run build && npm link && npm link @wardellbagby/github-workflow-generator",
+    "pretest": "npm run build && npm link && npm link @wardellbagby/gh-workflow-gen",
     "test": "node --no-warnings --loader ts-node/esm test/test_runner.ts",
     "prepare": "husky install"
   },

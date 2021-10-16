@@ -2,7 +2,7 @@ import {
   Workflow,
   convertToYaml,
   Job,
-} from "@wardellbagby/github-workflow-generator";
+} from "@wardellbagby/gh-workflow-gen";
 import path from "path";
 import fs from "fs";
 import { assertEquals, directory } from "../test_helpers.js";

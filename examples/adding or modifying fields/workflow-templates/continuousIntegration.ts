@@ -1,5 +1,5 @@
 import { WorkflowWithSpecialEvent } from "../workflow-generator";
-import { Step } from "@wardellbagby/github-workflow-generator";
+import { Step } from "@wardellbagby/gh-workflow-gen";
 
 const basicSetup: Step[] = [
   {
