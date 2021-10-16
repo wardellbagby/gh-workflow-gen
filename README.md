@@ -115,12 +115,12 @@ This is only a small taste as well. You can share whole jobs, if needed.
 
 ### What's this I hear about easier versioning for my actions? Sounds cool!
 
-Since everything is strongly-typed using TypeScript, you can also enforce that every Workflow uses the same version of your various actions, and update all of your actions at the same time. [See the "using versions" example here.](examples/using%20versions/).
+Since everything is strongly-typed using TypeScript, you can also enforce that every Workflow uses the same version of your various actions, and update all of your actions at the same time. [See the "using versions" example here.](examples/using%20versions/)
 
 
 ### Any other neat things I can do?
 
-Good question! Since this library doesn't currently exhaustively cover everything you can do in a Workflow, the type system has been purposefully made to be easily extensible, where possible. [Take a look at the "adding of modifying fields example for how to do that.](examples/adding%20or%20modifying%20fields/)
+Good question! Since this library doesn't currently exhaustively cover everything you can do in a Workflow, the type system has been purposefully made to be easily extensible, where possible. [Take a look at the "adding or modifying fields example for how to do that.](examples/adding%20or%20modifying%20fields/)
 
 
 ## So cool! How do I set this up for my project?!
@@ -134,6 +134,8 @@ npm install --save-dev @wardellbagby/gh-workflow-gen
 Next, let's create our first Workflow:
 
 ```typescript
+import { Workflow } from '@wardellbagby/gh-workflow-gen';
+
 export const myWorkflow: Workflow = {
     // TODO fill this in.
 }
@@ -151,6 +153,7 @@ writeWorkflow(myWorkflow);
 Lastly, we simply run the script you just created in the root of your project folder.
 
 ```shell
+cd path/to/my/project
 node generate_workflows.js
 ```
 
@@ -158,4 +161,4 @@ This will create the `workflows` directory inside of your existing `.github` dir
 
 ### That setup is...complex. Any other examples?
 
-Yes! This project uses itself, and as apart of its setup, it uses [script created in the last step above](scripts/generate_workflows.ts) run as a pre-commit hook using Husky. If you'd like that as an example, [check this out.](.husky/pre-commit)
+Yes! This project uses itself, and as a part of its setup, it uses [script created in the last step above](scripts/generate_workflows.ts) and runs as a pre-commit hook using Husky. If you'd like that as an example, [check this out.](.husky/pre-commit)
