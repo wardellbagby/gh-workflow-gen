@@ -2,7 +2,7 @@
 
 Declare your GitHub Workflows in TypeScript or JavaScript instead of YAML!
 
-![npm (scoped)](https://img.shields.io/npm/v/@wardellbagby/gh-workflow-gen?style=for-the-badge)
+[![npm (scoped)](https://img.shields.io/npm/v/@wardellbagby/gh-workflow-gen?style=for-the-badge)](https://www.npmjs.com/package/@wardellbagby/gh-workflow-gen])
 [![GitHub](https://img.shields.io/github/license/wardellbagby/gh-workflow-gen?style=for-the-badge)](https://github.com/wardellbagby/gh-workflow-gen/blob/main/LICENSE.md)
 [![GitHub Workflow Status](https://img.shields.io/github/workflow/status/wardellbagby/gh-workflow-gen/Run%20all%20tests?style=for-the-badge)](https://github.com/wardellbagby/gh-workflow-gen/actions?query=workflow%3A%22Run+all+tests%22)
 
@@ -120,7 +120,11 @@ Since everything is strongly-typed using TypeScript, you can also enforce that e
 
 ### Any other neat things I can do?
 
-Good question! Since this library doesn't currently exhaustively cover everything you can do in a Workflow, the type system has been purposefully made to be easily extensible, where possible. [Take a look at the "adding or modifying fields example for how to do that.](examples/adding%20or%20modifying%20fields/)
+Good question! Since this library doesn't currently exhaustively cover everything you can do in a Workflow, the type system has been purposefully made to be easily extensible, where possible. [Take a look at the "adding or modifying fields" example for how to do that.](examples/adding%20or%20modifying%20fields/)
+
+### You talk a lot about TypeScript, but I prefer JavaScript. Can I still use this library?
+
+Yup! Consider the typings just a bit of syntactical sugar; this library works just fine with pure JavaScript as well.
 
 
 ## So cool! How do I set this up for my project?!
