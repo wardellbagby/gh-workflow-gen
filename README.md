@@ -2,7 +2,7 @@
 
 Declare your GitHub Workflows in TypeScript or JavaScript instead of YAML!
 
-[![npm (scoped)](https://img.shields.io/npm/v/@wardellbagby/gh-workflow-gen?style=for-the-badge)](https://www.npmjs.com/package/@wardellbagby/gh-workflow-gen])
+[![npm (scoped)](https://img.shields.io/npm/v/@wardellbagby/gh-workflow-gen?style=for-the-badge)](https://www.npmjs.com/package/@wardellbagby/gh-workflow-gen)
 [![GitHub](https://img.shields.io/github/license/wardellbagby/gh-workflow-gen?style=for-the-badge)](https://github.com/wardellbagby/gh-workflow-gen/blob/main/LICENSE.md)
 [![GitHub Workflow Status](https://img.shields.io/github/workflow/status/wardellbagby/gh-workflow-gen/Run%20all%20tests?style=for-the-badge)](https://github.com/wardellbagby/gh-workflow-gen/actions?query=workflow%3A%22Run+all+tests%22)
 
