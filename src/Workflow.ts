@@ -8,8 +8,8 @@ export interface Schedule {
   cron: string;
 }
 
-type ubuntuVersions = "20.04" | "18.04" | "latest";
-type macOSVersions = "11" | "10.15" | "latest";
+type ubuntuVersions = "22.04" | "20.04" | "18.04" | "latest";
+type macOSVersions = "12" | "11" | "10.15" | "latest";
 type windowsVersions = "2016" | "2019" | "2022" | "latest";
 
 type SelfHostedRunnerLabels =
