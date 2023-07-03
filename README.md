@@ -4,7 +4,7 @@ Declare your GitHub Workflows in TypeScript or JavaScript instead of YAML!
 
 [![npm (scoped)](https://img.shields.io/npm/v/@wardellbagby/gh-workflow-gen?style=for-the-badge)](https://www.npmjs.com/package/@wardellbagby/gh-workflow-gen)
 [![GitHub](https://img.shields.io/github/license/wardellbagby/gh-workflow-gen?style=for-the-badge)](https://github.com/wardellbagby/gh-workflow-gen/blob/main/LICENSE.md)
-[![GitHub Workflow Status](https://img.shields.io/github/workflow/status/wardellbagby/gh-workflow-gen/Run%20all%20tests?style=for-the-badge)](https://github.com/wardellbagby/gh-workflow-gen/actions?query=workflow%3A%22Run+all+tests%22)
+[![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/wardellbagby/gh-workflow-gen/Run-all-tests.yml?branch=main&style=for-the-badge)](https://github.com/wardellbagby/gh-workflow-gen/actions?query=workflow%3A%22Run+all+tests%22)
 
 ## What is it?
 
@@ -161,7 +161,7 @@ cd path/to/my/project
 node generate_workflows.js
 ```
 
-This will create the `workflows` directory inside of your existing `.github` directory with the generated Workflows saved.
+This will create the `workflows` directory inside your existing `.github` directory with the generated Workflows saved.
 
 ### That setup is...complex. Any other examples?
 
