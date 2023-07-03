@@ -1,7 +1,4 @@
-import {
-  Workflow,
-  convertToYaml,
-} from "@wardellbagby/gh-workflow-gen";
+import { Workflow, convertToYaml } from "@wardellbagby/gh-workflow-gen";
 import path from "path";
 import fs from "fs";
 import { assertEquals, directory } from "../test_helpers.js";
@@ -11,6 +8,12 @@ export const testSimpleWorkflow = () => {
     name: "Simple Workflow",
     on: {
       push: {},
+    },
+    permissions: {
+      actions: "read",
+    },
+    env: {
+      ENV_FIELD: "1",
     },
     jobs: {
       echo: {

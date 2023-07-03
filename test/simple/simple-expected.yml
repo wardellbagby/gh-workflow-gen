@@ -1,6 +1,10 @@
 name: 'Simple Workflow'
 'on':
   push: {}
+permissions:
+  actions: 'read'
+env:
+  ENV_FIELD: '1'
 jobs:
   echo:
     name: 'Echo'

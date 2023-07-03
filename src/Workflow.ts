@@ -27,6 +27,26 @@ export type Runners =
   | `windows-${windowsVersions}`
   | ["self-hosted", ...SelfHostedRunnerLabels[]];
 
+type PermissionValue = "read" | "write" | "none";
+export type Permissions =
+  | {
+      actions?: PermissionValue;
+      checks?: PermissionValue;
+      contents?: PermissionValue;
+      deployments?: PermissionValue;
+      "id-token"?: PermissionValue;
+      issues?: PermissionValue;
+      discussions?: PermissionValue;
+      packages?: PermissionValue;
+      pages?: PermissionValue;
+      "pull-requests"?: PermissionValue;
+      "repository-projects"?: PermissionValue;
+      "security-events"?: PermissionValue;
+      statuses?: PermissionValue;
+    }
+  | "read-all"
+  | "write-all";
+
 export interface Job<
   VersionT extends Record<string, string> = Record<string, string>
 > {
@@ -59,5 +79,7 @@ export interface Workflow<
     schedule?: Schedule[];
     workflow_dispatch?: Record<string, never>;
   };
+  permissions?: Permissions;
+  env?: Record<string, string | boolean>;
   jobs: Record<string, Job<VersionT>>;
 }
