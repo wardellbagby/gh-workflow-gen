@@ -15,7 +15,7 @@ export const productionRelease: AppWorkflow = {
     publish: {
       name: "Release to NPM registry",
       needs: test,
-      "runs-on": "ubuntu-20.04",
+      "runs-on": "ubuntu-latest",
       steps: [
         ...basicSetup,
         {

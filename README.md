@@ -21,7 +21,7 @@ const workflow: Workflow = {
   jobs: {
     echo: {
       name: "Echo",
-      "runs-on": "macos-10.15",
+      "runs-on": "macos-latest",
       steps: [
         {
           name: "Echoing!",
@@ -42,7 +42,7 @@ name: 'Simple Workflow'
 jobs:
   echo:
     name: 'Echo'
-    runs-on: 'macos-10.15'
+    runs-on: 'macos-latest'
     steps:
       - name: 'Echoing!'
         run: 'echo "Hello World!"'
@@ -76,7 +76,7 @@ const buildAppWorkflow: Workflow = {
   jobs: {
     echo: {
       name: "Build",
-      "runs-on": "macos-10.15",
+      "runs-on": "macos-latest",
       steps: [
         ...basicSetup,
         {
@@ -98,7 +98,7 @@ const buildLibraryWorkflow: Workflow = {
   jobs: {
     echo: {
       name: "Build",
-      "runs-on": "ubuntu-20.04",
+      "runs-on": "ubuntu-latest",
       steps: [
         ...basicSetup,
         {

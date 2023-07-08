@@ -10,7 +10,7 @@ import { assertEquals, directory } from "../test_helpers.js";
 export const testNeedsWorkflow = () => {
   const myFirstJob: Job = {
     name: "My First Job",
-    "runs-on": "ubuntu-20.04",
+    "runs-on": "ubuntu-latest",
     steps: [
       {
         name: "My first step",
@@ -21,7 +21,7 @@ export const testNeedsWorkflow = () => {
 
   const mySecondJob: Job = {
     name: "My Second Job",
-    "runs-on": "ubuntu-20.04",
+    "runs-on": "ubuntu-latest",
     needs: myFirstJob,
     steps: [
       {
@@ -33,7 +33,7 @@ export const testNeedsWorkflow = () => {
 
   const myThirdJob: Job = {
     name: "My Third Job",
-    "runs-on": "ubuntu-20.04",
+    "runs-on": "ubuntu-latest",
     needs: [myFirstJob, mySecondJob],
     steps: [
       {

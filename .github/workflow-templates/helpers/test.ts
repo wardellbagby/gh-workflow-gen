@@ -3,7 +3,7 @@ import { AppJob } from "../index";
 
 export const test: AppJob = {
   name: "Run tests",
-  "runs-on": "ubuntu-20.04",
+  "runs-on": "ubuntu-latest",
   steps: [
     ...basicSetup,
     {

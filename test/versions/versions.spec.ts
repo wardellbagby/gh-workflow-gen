@@ -16,7 +16,7 @@ export const testWorkflowWithVersions = () => {
     jobs: {
       echo: {
         name: "Check the deps!",
-        "runs-on": "ubuntu-20.04",
+        "runs-on": "ubuntu-latest",
         steps: [
           {
             name: "Using a dependency!!",

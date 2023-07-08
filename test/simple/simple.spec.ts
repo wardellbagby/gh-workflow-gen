@@ -18,7 +18,7 @@ export const testSimpleWorkflow = () => {
     jobs: {
       echo: {
         name: "Echo",
-        "runs-on": "macos-10.15",
+        "runs-on": "macos-latest",
         steps: [
           {
             name: "Echoing!",

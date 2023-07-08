@@ -23,7 +23,7 @@ export const continuousIntegration: WorkflowWithSpecialEvent = {
   jobs: {
     test: {
       name: "Run Tests",
-      "runs-on": "ubuntu-20.04",
+      "runs-on": "ubuntu-latest",
       steps: [
         ...basicSetup,
         {
